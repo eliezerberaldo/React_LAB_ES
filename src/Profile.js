@@ -45,7 +45,7 @@ export default function Profile() {
       <h1 className="profile-name">{name}'s Profile</h1>
       <Avatar person={{ name }} size={120} />
       <Card>
-        <p>Inside a Card!</p>
+        <p>Meu texto!</p>
       </Card>
       {isOnline ? <p className="status online">✅ Ativo</p> : <p className="status offline">❌ Inativo</p>}
       {showWarning && <p className="warning">Aviso!</p>}
