@@ -39,6 +39,7 @@ const Home = () => {
                 <li><Link to="/Atv01" onClick={() => setIsDropdownOpen(false)}>Atividade 1</Link></li>
                 <li><Link to="/Atv02" onClick={() => setIsDropdownOpen(false)}>Atividade 2</Link></li>
                 <li><Link to="/Atv03" onClick={() => setIsDropdownOpen(false)}>Atividade 3</Link></li>
+                <li><Link to="/Atv04" onClick={() => setIsDropdownOpen(false)}>Atividade 4</Link></li>
               </ul>
             )}
           </li>

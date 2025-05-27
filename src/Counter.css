@@ -1,0 +1,60 @@
+.counter-section {
+    background-color: rgba(0, 10, 0, 0.6);
+    padding: 30px;
+    margin: 20px auto;
+    border: 1px solid rgba(0, 255, 0, 0.3);
+    box-shadow: 
+      0 0 12px rgba(0, 255, 0, 0.4),
+      inset 0 0 6px rgba(0, 255, 0, 0.15);
+    backdrop-filter: blur(3px);
+    max-width: 300px;
+    text-align: center;
+    border-radius: 8px;
+    animation: fadeIn 0.5s ease;
+  }
+  
+  .counter-section h1 {
+    font-family: 'Courier New', monospace;
+    font-size: 3em;
+    color: rgba(0, 255, 0, 0.9);
+    text-shadow: 0 0 10px rgba(0, 255, 0, 0.6);
+    margin-bottom: 20px;
+    animation: glitch 1s infinite alternate;
+  }
+  
+  .counter-section button {
+    background-color: rgba(0, 30, 0, 0.3);
+    border: 1px solid rgba(0, 255, 0, 0.3);
+    color: rgba(0, 255, 0, 0.9);
+    font-family: 'Courier New', monospace;
+    padding: 10px 25px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+    box-shadow: 
+      0 0 8px rgba(0, 255, 0, 0.3),
+      inset 0 0 5px rgba(0, 255, 0, 0.2);
+    border-radius: 5px;
+  }
+  
+  .counter-section button:hover {
+    background-color: rgba(0, 255, 0, 0.1);
+    animation: glitch 0.5s infinite;
+    text-shadow: 0 0 8px rgba(0, 255, 0, 0.7);
+  }
+
+  @keyframes glitch {
+    0% { text-shadow: 0.05em 0 rgba(0, 255, 252, 0.7), -0.05em -0.025em rgba(252, 0, 255, 0.7); }
+    14% { text-shadow: 0.05em 0 rgba(0, 255, 252, 0.7), -0.05em -0.025em rgba(252, 0, 255, 0.7); }
+    15% { text-shadow: -0.05em -0.025em rgba(0, 255, 252, 0.7), 0.025em 0.025em rgba(252, 0, 255, 0.7); }
+    50% { text-shadow: 0.025em 0.05em rgba(0, 255, 252, 0.7), 0.05em 0 rgba(252, 0, 255, 0.7); }
+    100% { text-shadow: -0.025em 0 rgba(0, 255, 252, 0.7), -0.025em -0.025em rgba(252, 0, 255, 0.7); }
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
